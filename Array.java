@@ -41,18 +41,13 @@ public class Array {
     // ****
     public static void main(String a[]) {
         int num[] = new int[4];
+        for(int i = 0; i < num.length; i++){
+            num[i] = i + 4;
+            System.out.println(num[i]);
+        }
 
-        for (int i = 0; i < num.length; i++) {
-            // for(int j=0; j< num[i].length; j++){
-
-            // }
-            int m = num.length;
-            while (m > i) {
-                System.out.print("*");
-                m--;
-            }
-            
-            System.out.println();
+        for(int j : num) {
+            System.out.println(j);
         }
 
         // for(int n[]: num){
@@ -60,6 +55,6 @@ public class Array {
         // System.out.print("*");
         // }
         // System.out.println();
-        // }
+        // } // it is called enhanced for loop, means for each loop
     }
 }
